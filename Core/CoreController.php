@@ -10,25 +10,6 @@ namespace Core;
  */
 abstract class CoreController
 {
-
-    /**
-     * Parameters from the matched route
-     * @var array
-     */
-    protected $routeParams = [];
-
-    /**
-     * Class constructor
-     *
-     * @param array $routeParams Parameters from the route
-     *
-     * @return void
-     */
-    public function __construct(array $routeParams)
-    {
-        $this->routeParams = $routeParams;
-    }
-
     /**
      * Magic method called when a non-existent or inaccessible method is
      * called on an object of this class. Used to execute before and after

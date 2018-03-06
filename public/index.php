@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 /**
- * Front controller
+ * Root path
  *
  * PHP version 7.2
  */

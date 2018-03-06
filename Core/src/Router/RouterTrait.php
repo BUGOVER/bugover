@@ -8,11 +8,21 @@ namespace Core\Router;
  * Trait RouterTrait
  * @package Core\Src
  */
+/**
+ * Trait RouterTrait
+ * @package Core\Router
+ */
 trait RouterTrait
 {
-    use RouterTrait;
-
+    /**
+     * @var int
+     */
     protected $maxScanDepth = 3;
+
+    /**
+     * @var
+     */
+    protected $route;
 
     /**
      * @param $dir
@@ -112,7 +122,7 @@ trait RouterTrait
         // Add start and end delimiters, and case insensitive flag
         $route = '/^' . $route . '$/i';
 
-        return $route;
+        return $this->route = $route;
     }
 
 }
