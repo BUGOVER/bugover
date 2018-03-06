@@ -7,6 +7,7 @@ use App\Additional\Glob;
 use Core\CoreController;
 use Core\Exceptions\Error;
 use Core\Router\Rest\RouterMatch;
+use function var_dump;
 
 /**
  * Router
@@ -80,6 +81,7 @@ class Router extends RouterMatch
     private function urlMatch(string $url): bool
     {
         foreach ($this->routesMatch as $route => $params) {
+//            var_dump($route);
             if (preg_match($route, $url, $matches)) {
                 // Get named capture group values
                 foreach ($matches as $key => $match) {

@@ -12,6 +12,11 @@ use Core\View\View;
  */
 class UserController extends CoreController
 {
+    public function __construct()
+    {
+
+    }
+
     /**
      * @throws \Twig_Error_Loader
      * @throws \Twig_Error_Runtime
