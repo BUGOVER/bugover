@@ -18,6 +18,7 @@ function dd($data)
 function dump($data)
 {
     echo '<pre>';
+    /** @noinspection ForgottenDebugOutputInspection */
     var_dump($data);
     echo '</pre>';
     die();

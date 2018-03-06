@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace App\Repositories;
 
+use App\Enity\User;
 use Core\CoreRepositories;
 
 
@@ -12,9 +13,15 @@ use Core\CoreRepositories;
  */
 class UserRepositories extends CoreRepositories
 {
-    public function createUser()
-    {
+    protected $user;
 
+    /**
+     * UserRepositories constructor.
+     * @param User $user
+     */
+    public function __construct(User $user)
+    {
+        $this->user = $user;
     }
 
 }

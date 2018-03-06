@@ -3,7 +3,7 @@ declare(strict_types=1);
 
 namespace Core\Router;
 
-use App\Config\Glob;
+use App\Additional\Glob;
 use Core\CoreController;
 use Core\Exceptions\Error;
 use Core\Router\Rest\RouterMatch;

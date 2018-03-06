@@ -17,7 +17,7 @@ abstract class CoreRepositories extends Builder
      */
     public function execute()
     {
-
+        // TODO: Implement select() method.
     }
 
     /**
@@ -25,7 +25,7 @@ abstract class CoreRepositories extends Builder
      */
     public function query()
     {
-
+        // TODO: Implement select() method.
     }
 
     /**

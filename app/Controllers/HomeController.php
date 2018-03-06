@@ -24,7 +24,6 @@ class HomeController extends CoreController
      */
     public function indexAction(): void
     {
-//        dd($_REQUEST);
         View::get('pages/home/index');
     }
 }

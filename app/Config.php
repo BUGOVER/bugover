@@ -10,7 +10,6 @@ namespace App;
  */
 class Config
 {
-
     /**
      * Database host
      * @var string

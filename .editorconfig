@@ -1,6 +1,6 @@
 [*]
 charset=utf-8
-end_of_line=crlf
+end_of_line=lf
 insert_final_newline=false
 indent_style=space
 indent_size=4
@@ -13,10 +13,12 @@ indent_style=space
 indent_size=2
 tab_width=2
 
-[*.js.map]
+[*.js]
 indent_style=space
 indent_size=2
 tab_width=2
+max_line_length=160
+insert_final_newline=false
 
 [{*.ddl,*.sql}]
 indent_style=space
@@ -25,25 +27,26 @@ tab_width=2
 
 [*.scss]
 indent_style=space
-indent_size=4
-tab_width=4
+indent_size=2
+tab_width=2
 
 [*.css]
 indent_style=space
-indent_size=4
-tab_width=4
+indent_size=2
+tab_width=2
+max_line_length=120
 
 [{*.yaml,*.yml}]
 indent_style=space
 indent_size=2
 tab_width=2
-end_of_line=crlf
+end_of_line=lf
 
 [*.xml]
 indent_style=space
 indent_size=2
 tab_width=2
-end_of_line=crlf
+end_of_line=lf
 
 [{composer.lock,composer.json}]
 indent_style=space
@@ -56,12 +59,12 @@ indent_style=space
 tab_width=4
 tab_width=4
 insert_final_newline=true
-end_of_line=crlf
+end_of_line=lf
 
 [{*.html,*.twig}]
 indent_size=2
 indent_style=space
 tab_width=2
 tab_width=2
-end_of_line=crlf
+end_of_line=lf
 insert_final_newline=false
